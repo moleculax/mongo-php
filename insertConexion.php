@@ -2,8 +2,9 @@
 /*
 /* 
 **www.moleculax.com.ve
-**https://github.com/moleculax
+**https://github.com/moleculax 
 **Este es un ejemplo simple de como insertar datos usando PHP7.3 en mongoDB
+**run debian testing
 */
 
  require 'vendor/autoload.php'; 
