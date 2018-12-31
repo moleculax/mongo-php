@@ -1,5 +1,8 @@
 <?php 
-
+/* 
+**www.moleculax.com.ve
+**https://github.com/moleculax
+*/
  require 'vendor/autoload.php'; 
  $cn = (new MongoDB\Client("mongodb://127.0.0.1:27017"))->dbname->BDequipos; 
     if($cn==true) {
