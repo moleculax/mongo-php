@@ -2,7 +2,6 @@
 <?php
 /*
 http://moleculax.com.ve
-
 */
 
  require 'vendor/autoload.php'; 
