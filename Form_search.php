@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Datos IDPC </title>
+<title>Busqueda Datos IDPC </title>
 <meta name="viewport" content="width=device-width, initial-
 scale=1.0">
 <link href="css/bootstrap.min.css" rel="stylesheet">
