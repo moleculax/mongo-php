@@ -1,15 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Datos HW </title>
+<meta name="viewport" content="width=device-width, initial-
+scale=1.0">
+<link href="css/bootstrap.min.css" rel="stylesheet">
+<link href="css/custom.css" rel="stylesheet">
+</head>
+<body>
+	<nav class="navbar navbar-primary bg-primary">
+  <a class="navbar-brand text-white" href="index.php">Inicio</a>
+</nav>
+<div class="container">
+<div class="row">
+<div class="col-sm-12">
+
 <?php 
-/* 
-**www.moleculax.com.ve
-**https://github.com/moleculax
-**Este es un ejemplo simple de como insertar datos usando PHP7.3 en mongoDB
-**run debian testing
-*/
 
  require 'vendor/autoload.php'; 
  $cn = (new MongoDB\Client("mongodb://127.0.0.1:27017"))->dbname->BDequipos; 
     if($cn==true) {
-    echo "<H1>:. TOTALIDAD DATOS INSERTADOS EN LA BD.:</H1><br>"; //porque no hubo excepciones
+    echo "<H5>:. TOTALIDAD DATOS INSERTADOS EN LA BD.:</H5><br>"; //porque no hubo excepciones
   }
   
   $client = new MongoDB\Client();
@@ -25,3 +36,9 @@
 
 
 ?>
+
+</div>
+</div>
+</div>
+</body>
+</html>

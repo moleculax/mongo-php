@@ -1,14 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Datos HW </title>
+<meta name="viewport" content="width=device-width, initial-
+scale=1.0">
+<link href="css/bootstrap.min.css" rel="stylesheet">
+<link href="css/custom.css" rel="stylesheet">
+</head>
+<body>
+
+<div class="container">
+<div class="row">
+<div class="col-sm-12">
+
+
+
 <?php 
 /* 
 **www.moleculax.com.ve
 **https://github.com/moleculax
-**Este es un ejemplo simple de como insertar datos usando PHP7.3 en mongoDB
-**run debian testing
 */
+include("Form_search.php");
+
  require 'vendor/autoload.php'; 
  $cn = (new MongoDB\Client("mongodb://127.0.0.1:27017"))->dbname->BDequipos; 
     if($cn==true) {
-    echo ":.CONECT. DATOS SEARCH.:<br>"; //porque no hubo excepciones
+    echo "<hr>"; //porque no hubo excepciones
   }
   
   $client = new MongoDB\Client();
@@ -17,12 +34,17 @@
     $curs = array("idpc" => $_POST["idpc"]);
   $cursor = $nom->find($curs);
   	 foreach($cursor as $doc) {
-    echo  $doc['idpc']."<br>";
-    echo $doc['ip']."<br>"; 
-    echo $doc['mac']."<br>"; 
+    echo"IDPC: ".  $doc['idpc']." ";
+    echo"IP: ". $doc['ip']." "; 
+    echo"MAC: ". $doc['mac']."<br>"; 
     echo"<br>";
   }
  
     
 
 ?>
+</div>
+</div>
+</div>
+</body>
+</html>

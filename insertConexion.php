@@ -2,9 +2,8 @@
 /*
 /* 
 **www.moleculax.com.ve
-**https://github.com/moleculax 
+**https://github.com/moleculax
 **Este es un ejemplo simple de como insertar datos usando PHP7.3 en mongoDB
-**run debian testing
 */
 
  require 'vendor/autoload.php'; 
@@ -31,6 +30,7 @@
     if ($nom->insertMany($seedData)){
 
        echo"Datos Insertados correctamente";
+        header('Location: index.php');
 }
     else { echo"Fallo en inserción de datos.";}
 }
